@@ -1,0 +1,23 @@
+<div class="container">
+  <!--FORMULÁRIO DE CADASTRO-->
+  <div class="container-fluid">
+    <div class="row justify-content-md-center">
+      <form class="col col-lg-6 login-form" [formGroup]="form" (ngSubmit)="adicionar()">
+        <h1>Cadastro</h1>
+        <div class="form-floating mb-3">
+          <input type="text" formControlName="nome" placeholder="NOME" />
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" formControlName="email" placeholder="EMAIL" />
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" formControlName="senha" placeholder="SENHA" />
+          <input type="submit" value="Cadastrar" />
+        </div>
+        <p class="link">
+          Já tem conta?
+          <a routerLink="/"> Ir para Login </a>
+      </form>
+    </div>
+  </div>
+</div>

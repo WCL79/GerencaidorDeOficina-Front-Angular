@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="container-fluid">
+    <div class="row justify-content-md-center">
+      <!--FORMULÁRIO DE LOGIN-->
+      <form class="col col-lg-6 login-form" [formGroup]="form">
+        <h1>Acessar</h1>
+        <div class="form-floating mb-3">
+
+          <input type="text" formControlName="email" placeholder="EMAIL" />
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" formControlName="senha" placeholder="SENHA" />
+        </div>
+
+        <div>
+          <input type="submit" value="Entre" (click)="login()" />
+        </div>
+
+        <div class="link">
+          Ainda não tem conta?
+          <a routerLink="../cadastrar">Cadastre-se</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <!-- 
+<div class="p-d-flex p-jc-center" style="position: relative">
+  <div>
+    <h5>Usuário</h5>
+    <span class="p-float-label">
+      <input id="float-input" type="text" pInputText [(ngModel)]="value1" />
+      <label for="float-input">Digite seu CPF</label>
+    </span>
+    <h5>Senha</h5>
+    <p-password [(ngModel)]="value2" [toggleMask]="true"></p-password>
+    <button
+      pButton
+      type="submit"
+      class="btn"
+      [class]="operacao ? 'btn-primary' : 'btn-success'"
+    >
+      {{ "Acessar" }}
+    </button>
+    <div class="p-mr-2">
+      <br /><br />
+      <a routerLink="/cliente">Cadastrar Cliente</a>
+      <br /><br />
+      <a routerLink="">Voltar para Home</a>
+    </div>
+  </div>
+</div>
+-->

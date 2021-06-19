@@ -1,0 +1,56 @@
+<title>DEVCARROS</title>
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row style="font-size: 1.2rem; height: 80px">
+    <span (click)="home()"><b>Gerenciador Automotivo</b></span>
+    <span class="example-spacer" routerLink=""></span>
+    <button mat-button [matMenuTriggerFor]="beforeMenu">
+      <b>ESCOLHA UMA FUNCIONALIDADE</b>
+    </button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item (click)="veiculo()"><b>Cadastrar Veículo</b></button>
+      <button mat-menu-item><b>Cadastar Serviço</b></button>
+      <button mat-menu-item (click)="login()"><b>Sair</b></button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!--<div class="d-flex flex-column wrapper">
+  <nav
+    class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom shadow-sm mb-3"
+  >
+    <div class="container">
+      <a class="navbar-brand" const routes: Routes = [
+  { path: 'clientes', component: ClienteListaComponent },
+  { path: 'clientes/cadastro', component: ClienteCadastroComponent },
+  { path: 'clientes/detalhe', component: ClienteDetalheComponent },
+];
+
+export const ClienteRoutes = RouterModule.forChild(routes);
+><b>Gerenciador Automotivo</b></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target=".navbar-collapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/veiculo">Veículos</a>
+          </li>
+        </ul>
+        <div class="align-self-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a routerLink="/autenticacao" class="nav-link text-white"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>-->

@@ -1,0 +1,17 @@
+{
+  " extends " : " ./tsconfig.json " ,
+  " compilerOptions " : {
+    " outDir " : " ./out-tsc/spec " ,
+    " tipos " : [
+      " jasmim "
+    ]
+  },
+  " arquivos " : [
+    " src / test.ts " ,
+    " src / polyfills.ts "
+  ],
+  " incluir " : [
+    " src / ** / *. spec.ts " ,
+    " src / ** / *. d.ts "
+  ]
+}
